@@ -1,0 +1,12 @@
+<form action="/journals/<%=journal._id%>?_method=put" method="post">
+    <div>
+        <input type="text" name="journal[title]" placeholder="title" value="<%=journal.title%>">
+    </div>
+    <div>
+        <input type="text" name="journal[image]" placeholder="url" value="<%=journal.image%>">
+    </div>
+    <div>
+        <textarea name="journal[body]"><%=journal.body%></textarea>
+    </div>
+    <input type="submit">    
+</form>

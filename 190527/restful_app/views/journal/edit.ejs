@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+<form action="/journals/<%=journal._id%>?_method=PUT" method="POST">
+    <div style="text-align:center;">
+        <div>
+            <input type="text" name="journal[title]" value="<%=journal.title%>" placeholder="title">
+        </div>
+        <div>
+            <input type="text" name="journal[image]" value="<%=journal.image%>" placeholder="image url">
+        </div>
+        <div>
+            <textarea name="journal[body]"><%=journal.body%></textarea>
+        </div>
+        <div>
+            <button>Submit</button> 
+        </div>
+    </div>
+</form>
+
+<% include ../partials/footer %>

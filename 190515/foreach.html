@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var colors = ["red", "orange", "yellow", "green"];
+
+		colors.forEach(function(element, index, third){
+			console.log(index + ": " + element);
+			console.log(third);
+		})
+
+		function printReverse(arr){
+			for(var i=arr.length-1; i>=0; i--){
+				console.log(arr[i]);
+			}
+		}
+
+		printReverse([1,2,3,4]);
+		printReverse(["a","b","c"]);
+
+		function isUniform(arr){
+			var element = arr[0];
+			for(var i=0; i<arr.length; i++){
+				if(element != arr[i]){
+					console.log("false");
+					return false;
+				}
+			}
+				console.log("true");
+				return true;
+		}
+
+		isUniform([1,1,1,1]);
+		isUniform([2,1,1,1]);
+		isUniform(['a','b','p']);
+		isUniform(['b','b','b']);
+
+	</script>
+</body>
+</html>

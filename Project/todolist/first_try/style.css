@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+}
+
+#to-do-box {
+	margin: 0;
+	text-align: left;
+	max-width: 400px;
+	margin: 20% auto;
+	padding-left: 3%;
+	padding-right: 3%;
+	border: solid black 2px;
+}
+
+.btnRemove {
+	color: red;
+	display: none;
+}
+
+.btnRemove:hover {
+	background: pink;
+}

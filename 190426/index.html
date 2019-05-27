@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purffect Match</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style type="text/css">
+    	body {
+    		background: url(https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    		background-size: cover;
+    		background-position: center;
+    		font-family: Lato;
+    		/*background-repeat: no-repeat;*/
+    		color: white;
+    	}
+    	#content {
+    		text-align: center;
+    		padding-top: 25%;
+    		text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    					 0px 8px 13px rgba(0,0,0,0.1),
+    					 0px 18px 23px rgba(0,0,0,0.1)
+    					 /*첫번째 x축 두번째 y축 세번째 blur*/
+    	}
+    	h1 {
+    		font-weight: 700;
+    		font-size: 5em;
+    	}
+    	html {
+    		height: 100%; 
+    		/*이렇게 하면 responsive하게 화면을 줄여도 딱 100%만 커버가 된다*/
+    	}
+    	hr {
+    		width: 400px;
+    		border-top: 1px solid #f8f8f8;
+    		border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    		/*이렇게하면 shadow효과를 준다*/
+    	}
+    </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Purffect Match</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home <span class="sr-only"></span></a></li>
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">Contact</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><i class="fas fa-user-plus"></i> Sign up</a></li>
+	        <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- grid안에서 중앙정렬하는 방법 -->
+				<!-- 1. id로 묶는다 
+					 2. h1시리즈와 버튼 모두 텍스트로 인식
+					 3. text-align: center -->
+				<div id="content">
+					<h1>Purffect Match</h1>
+					<h3>The Only Human-Feline Dating App</h3>
+					<hr>
+					<button class="btn btn-default btn-lg"><i class="fas fa-paw"></i>  Get Started!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+    <button><a href="/journals/add">Want to Add another journal?</a></button>
+    
+    <%journals.forEach(function(journal){%>
+        <div>
+            <h1><%=journal.title%></h1>
+            <img src="<%=journal.image%>">
+            <p><%=journal.body%></p>
+            <a href="/journals/<%=journal._id%>">See in detail</a>
+        </div>
+    <%})%>

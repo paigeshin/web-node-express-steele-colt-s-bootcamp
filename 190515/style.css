@@ -1,0 +1,31 @@
+body{
+	background: pink;
+}
+
+.navbar-light .navbar-brand {
+	color: red;
+}	
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: red;
+}
+
+#header .row span {
+	color: red;
+}
+
+.navbar.scrolled {
+	background: rgb(222, 192, 222);
+	transition: background 1s;
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-weight: 100;
+		font-size: 3rem;
+	}
+}

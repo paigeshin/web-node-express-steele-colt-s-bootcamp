@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>The Great 
+		<br>
+		<span id="colorDisplay">RGB</span> 
+		<br>
+		Color Game
+	</h1>
+
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button id="easyBtn">Easy</button>
+		<button id="hardBtn" class="selected">Hard</button>
+	</div>
+
+	<div id="container">
+		<!-- 사각형그리기 - div -->
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script type="text/javascript" src="colorGame.js"></script>
+	
+</body>
+</html>
+
+<!--1. message가 correct로 가만히 있는 것을 바꿔준다. -->
+<!--2. play again이 유저가 이겼을 때만 나오게 한다. 나머지에는 new Colors로 돌아가게 한다.  -->
+<!--3. button:hover시에 outline 없애기  -->
+<!--4. refactor  -->

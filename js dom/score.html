@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1><span id="left">0</span> to <span id="right">0</span></h1>
+
+	<p>Playing to: <span id="game_setting">5</span></p>
+	
+	<div>
+		<input type="text" name="">
+		<button id="btn_left">Player One</button>
+		<button id="btn_right">Player Two</button>
+		<button id="reset">Reset</button>
+	</div>
+
+	<script type="text/javascript">
+
+		//일단 스코어 올리기
+		var btnPlayer1 = document.querySelector("#btn_left");
+		var btnPlayer2 = document.querySelector("#btn_right");
+		var btnReset = document.querySelector("#reset");
+
+		var limit = document.querySelector("#game_setting");
+
+		btnPlayer1.addEventListener("click", function(){
+			if(document.querySelector("#left").textContent < limit.textContent && document.querySelector("#right").textContent < limit.textContent){
+				document.querySelector("#left").textContent++;
+			} 
+			if(document.querySelector("#left").textContent == limit.textContent){
+				btn_right.setAttribute("disabled", true);
+				btn_left.setAttribute("disabled", true);
+				if(document.querySelector("#right").style.color !== "green" && document.querySelector("#left").style.color !== "green"){
+					document.querySelector("#left").style.color="green";
+				}
+			}
+		});
+		btnPlayer2.addEventListener("click", function(){
+			if(document.querySelector("#right").textContent <= limit.textContent && document.querySelector("#left").textContent <= limit.textContent){
+				document.querySelector("#right").textContent++;
+			} 
+			if(document.querySelector("#right").textContent == limit.textContent){
+				btn_right.setAttribute("disabled", true);
+				btn_left.setAttribute("disabled", true);
+				if(document.querySelector("#right").style.color !== "green" && document.querySelector("#left").style.color !== "green"){
+				document.querySelector("#right").style.color="green";
+				}
+			}
+		});
+
+		btnReset.addEventListener("click", function(){
+			document.querySelector("#left").textContent = 0;
+			document.querySelector("#right").textContent = 0;
+			document.querySelector("#left").style.color = "black";
+			document.querySelector("#right").style.color = "black";
+			btn_left.removeAttribute("disabled");
+			btn_right.removeAttribute("disabled");
+			document.querySelector("#game_setting").textContent = document.querySelector("input").value;
+			console.log(document.querySelector("input").value);
+		});
+
+		//게임세팅 로직
+		//1. text input을 새로운 limit 값으로 지정
+
+		//1.게임 세팅
+		//2.스코어 높이기. 
+		//. 5이상일시 초록색. 스코어창 더이상 바뀌면 안됨.
+		//문제가 뭔지 깨달음. 변수에 저장한 값이 직접적으로 element에 영향을 주지 않는다.
+
+	</script>
+
+</body>
+</html>

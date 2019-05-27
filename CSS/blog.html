@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<style type="text/css">
+		body {
+			border: 20px solid #bdc3c7;
+			padding: 20px;
+
+			max-width: 700px;/*유저가 창을 줄일 때 700px가 지나면 박스가 작아지기 시작한다. 700px이상 작아지기 전까지는 본모습을 유지한다.*/
+			width: 80%;/*700px보다 작은 값일 때 전체화면의 80%를 유지한다. 이 값을 50%로 바꾸면 곧바로 이해할 수 있다. 위에 700px값보다 작아지면 화면의 50%까지 유지한다.*/
+
+			margin: 20px auto;/*위 아래는 20px만큼, 왼쪽 오른쪽 가운데로 놓기*/
+
+			font-family: Source Sans Pro;
+		}
+
+		.quote {
+			border-left: 5px solid #bdc3c7;
+			padding-left: 5px;
+		}
+
+		.date {
+			text-transform: uppercase;
+			color:#3498db;
+			letter-spacing: 0.2rem; 
+			/* 
+			em은 parent element의 영향을 받지만, rem은 root element에 영향을 받는다.
+			예를들어 body에 font-size: 2em;으로 두고
+			h1에 font-size: 2em 으로 두면 이 값은 body의 2배가 되지만
+			rem은 root element의 영향을 받기때문에 항상 같은 값을 가진다.;
+			*/
+		}
+
+		h2 {
+			color: #2c3e50;
+			font-size: 2.0rem;
+		}
+
+		hr {
+		    border: 0;
+		    height: 1px;
+		    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+
+		.post {
+			margin-bottom: 20px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="post">
+		<div class="date">November 23 2015</div>
+
+		<h2>This is My First Article</h2>
+			<p class="quote">Bacon ipsum dolor amet spare ribs porchetta ham landjaeger pig doner. Biltong turducken bresaola pork loin. Pork chop shank bacon corned beef strip steak flank ham alcatra landjaeger ground round. Pork loin strip steak cupim alcatra. Bresaola andouille rump kielbasa kevin tongue tri-tip shank tenderloin chuck ham hock leberkas tail alcatra. Turkey shankle pork chop, meatloaf shoulder salami biltong kielbasa bacon pastrami ground round short ribs jerky. Turkey landjaeger hamburger brisket pork chop ham alcatra.</p>
+			<p>Pork belly picanha pork loin, jerky capicola biltong jowl. Burgdoggen shank hamburger meatloaf biltong rump. Pork chop tail shankle t-bone, cupim sausage leberkas chuck salami biltong short ribs corned beef meatloaf landjaeger bacon. Pancetta pork buffalo pork belly alcatra. Ribeye ground round capicola burgdoggen cow hamburger fatback leberkas turducken pork belly bresaola.</p>
+			<p>Turkey tri-tip salami ball tip jerky, kielbasa shoulder burgdoggen ground round. Porchetta frankfurter brisket, pork chop venison bresaola drumstick filet mignon ham pork ham hock biltong. Salami turducken short ribs, tongue andouille venison frankfurter. Pig porchetta beef rump pork belly, boudin ham kielbasa capicola strip steak andouille frankfurter drumstick tenderloin kevin. Tail jowl leberkas filet mignon picanha salami capicola frankfurter pancetta shankle cow pork loin meatball prosciutto venison. Shoulder salami short ribs pork rump doner burgdoggen jowl ball tip.</p>
+			<hr>
+	</div>
+
+	
+
+	<div class="post">
+		<div class="date">December 23 2015</div>
+
+		<h2>This is My Second Article</h2>
+			<p class="quote">Bacon ipsum dolor amet spare ribs porchetta ham landjaeger pig doner. Biltong turducken bresaola pork loin. Pork chop shank bacon corned beef strip steak flank ham alcatra landjaeger ground round. Pork loin strip steak cupim alcatra. Bresaola andouille rump kielbasa kevin tongue tri-tip shank tenderloin chuck ham hock leberkas tail alcatra. Turkey shankle pork chop, meatloaf shoulder salami biltong kielbasa bacon pastrami ground round short ribs jerky. Turkey landjaeger hamburger brisket pork chop ham alcatra.</p>
+			<p>Pork belly picanha pork loin, jerky capicola biltong jowl. Burgdoggen shank hamburger meatloaf biltong rump. Pork chop tail shankle t-bone, cupim sausage leberkas chuck salami biltong short ribs corned beef meatloaf landjaeger bacon. Pancetta pork buffalo pork belly alcatra. Ribeye ground round capicola burgdoggen cow hamburger fatback leberkas turducken pork belly bresaola.</p>
+			<p>Turkey tri-tip salami ball tip jerky, kielbasa shoulder burgdoggen ground round. Porchetta frankfurter brisket, pork chop venison bresaola drumstick filet mignon ham pork ham hock biltong. Salami turducken short ribs, tongue andouille venison frankfurter. Pig porchetta beef rump pork belly, boudin ham kielbasa capicola strip steak andouille frankfurter drumstick tenderloin kevin. Tail jowl leberkas filet mignon picanha salami capicola frankfurter pancetta shankle cow pork loin meatball prosciutto venison. Shoulder salami short ribs pork rump doner burgdoggen jowl ball tip.</p>
+	</div>
+
+</body>
+</html>

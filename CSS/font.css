@@ -1,0 +1,70 @@
+/*font-family*/
+
+p {
+	font-family: "Arial"; 
+	/*세미콜론을 써도되고 안써도 된다. 하지만 앞에 01 Arial 이런식으로 숫자가 들어가는 것은 무조건 써야한다.*/
+}
+
+h1 {
+	font-family: Georgia;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	/*구글폰트에서 가져온 것 적용한 모습. 웹페이지에 사용법이 모두 나와있다.*/
+}
+
+/*font-size*/
+
+body {
+	font-size: 10px;
+}
+
+h1 {
+	font-size: 5.0em;
+	/*body에서 적용한 font-size보다 5배 크다
+	원래 아무것도 적용하지 않으면 거의 16px쯤 된다.*/
+}
+
+p {
+	font-size: 2.0em;
+}
+
+span {
+	font-size: 2.0em;
+}
+
+/*font-weight*/
+
+p {
+	font-weight: bold;
+	/*font-weight: normal;*/
+}
+
+/*line-height*/
+
+p {
+	line-height: 1.5; 
+	/*줄간의 공간*/
+}
+
+/*text-align*/
+
+h1 {
+	text-align: right;
+}
+
+p {
+	text-align: center;
+}
+
+/*text-decoration*/
+
+p {
+	text-decoration: underline;
+}
+
+h1 {
+	text-decoration: line-through;
+}
+

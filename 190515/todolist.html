@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do-List</title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.setTimeout(function() {
+
+			var array = [];
+
+			while(true){
+			var answer = prompt("Choose Your Action\n1 - new: add a todo\n2 - list: view all todos\n3 - quit: quit app");
+
+				if(answer === "new"){
+					var added_todo = prompt("Tell me what you want to add in your todolist");
+					array.push(added_todo);
+				}
+				else if(answer === "list"){
+					console.log(array);
+				}
+				else if(answer === "quit"){
+					break;
+				}
+			}
+
+		}, 500);
+	</script>
+</body>
+</html>

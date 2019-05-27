@@ -1,0 +1,17 @@
+<h1>Detail Page</h1>
+
+    <div>
+        <h1><%=journal.title%></h1>
+        <img src="<%=journal.image%>">
+        <p><%=journal.body%></p>
+    </div>
+
+    <div>
+        <a href="/journals/<%=journal._id%>/edit">Edit Your Journal</a>
+    </div>
+
+    <div>
+        <form action="/journals/<%=journal._id%>?_method=delete" method="post">
+            <button>Delete</button>
+        </form>
+    </div>

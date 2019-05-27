@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Events</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h1>jQuery Events</h1>
+
+	<input type="text" name="">
+
+	<button>Don't Click Me</button>
+	<button>Seriously Don't Click Me</button>
+	<button>This is your last warning!</button>
+
+	<script type="text/javascript">
+		$("input").keypress(function(event){
+			//여기서 event라는 parameter는 event에 대한 정보를 가지고 있다.
+			console.log(event);
+			//출력 정보
+			//type="keypress"
+			//charCode
+			//keyCode 
+			//which         -   code of the key which is pressed. (Javascript page code. 모든 숫자, 문자, shift 등은 code를 가지고 있다.)
+			//........
+			if(event.which === 13){
+				//if user hit enter	
+			}
+			
+		})
+
+		$("h1").on("click", function(){
+			$(this).css("color", "purple");
+		});
+
+		$("input").on("keypress", function(){
+			console.log("Keypressed!");
+		});
+
+		$("button").on("mouseenter", function(){
+			console.log("MOUSE ENTER!");
+			$(this).css("font-weight", "bold");
+		})
+
+		$("button").on("mouseleave", function(){
+			console.log("MOUSE ENTER!");
+			$(this).css("font-weight", "normal");
+		})
+	</script>
+
+</body>
+</html>

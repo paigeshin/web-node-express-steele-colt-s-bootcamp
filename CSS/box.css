@@ -1,0 +1,22 @@
+p {
+
+/*Content - Width and Height*/
+/*width: 200px;
+퍼센트가 더 자주 쓰인다. responsive하다 !!!!!! */
+width: 50%;  
+
+/*Border*/
+border: 2px solid blue;
+
+/*Padding*/
+/*padding: 10px;*/
+padding-left: 40px;
+
+/*Margin*/
+/*margin: 100px;*/
+/*margin-top: 500px*/
+/*margin: 20px 40px 500px 100px; top right bottom left*/
+/*margin: 0 auto 0 auto; ---이렇게 auto를 주면 중앙으로 오게 된다.*/
+/*margin: 0 auto; ---이렇게 두 개만하면 위/아래, 오른쪽/왼쪽이 적용된다.*/
+margin: 50px 20px;
+}

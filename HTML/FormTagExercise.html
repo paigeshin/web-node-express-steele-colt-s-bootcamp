@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Exercise</title>
+</head>
+<body>
+
+	<form action="example.php" method="get">
+		<label for="first_name"></label>
+		First Name:<input id="first_name" type="text" name="first_name" placeholder="John" required>
+		<label for="last_name"></label>
+		Last Name:<input id="last_name" type="text" name="last_name" placeholder="Smith" required>
+		<br>
+		Male <input type="radio" name="sex" value="male" required>
+		Female <input type="radio" name="sex" value="female" required>
+		Other <input type="radio" name="sex" value="other" required>
+		<br>
+		Email: <input type="text" name="email" placeholder="your email" required>
+		Password: <input type="password" name="password" placeholder="your passoword" required>
+		<br>
+		Birthday: 
+		<select name="month" value="month" required>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		<select name="day" value="day" required>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10s</option>
+		</select>
+		<br>
+		I agree to the terms and conditions <input type="checkbox" name="agreement" required>
+		<br>
+		<input type="submit">
+	</form>
+
+</body>
+</html>

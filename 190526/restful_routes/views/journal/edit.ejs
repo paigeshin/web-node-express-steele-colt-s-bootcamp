@@ -1,0 +1,14 @@
+<h1>This is Edit Page</h1>
+
+<form action="/journal/<%=journal._id%>?_method=PUT" method="POST">
+    <div>
+        <input type="text" name="journal[title]" value="<%=journal.title%>">
+    </div>
+    <div>
+        <input type="text" name="journal[image]" placeholder="<%=journal.image%>">
+    </div>
+    <div>
+        <textarea name="journal[body]"><%=journal.body%></textarea>
+    </div>
+    <button>submit</button>
+</form>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+	</style>
+
+</head>
+<body>
+
+	<!-- 
+	Objectives. - Number one reason people use Bootstrap
+	1. Understad Purpose of Grid System
+	2. Understand the 4 different sizes
+	3. Write Nested Grids  
+	-->
+
+	<div class="container">
+<!-- 		<div class="row">
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+			<div class="pink col-lg-1 col-md-2 col-sm-6 col-xs-12">lg1</div>
+		</div> -->
+		
+		<div class="row">
+			<div class="pink col-md-3 col-sm-6">
+				<div class="row">
+					<div class="pink col-lg-6">nested content</div>
+					<div class="pink col-lg-6">nested content</div>
+				</div>
+			</div>
+			<div class="pink col-md-3 col-sm-6">content2</div>
+			<div class="pink col-md-3 col-sm-6">content3</div>
+			<div class="pink col-md-3 col-sm-6">
+				<div class="row">
+					<div class="pink col-lg-2">nested content</div>
+					<div class="pink col-lg-2">nested content</div>
+					<div class="pink col-lg-2">nested content</div>
+					<div class="pink col-lg-2">nested content</div>
+					<div class="pink col-lg-2">nested content</div>
+					<div class="pink col-lg-2">nested content</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 그리드시스템을 사용하려면 컨테이너 아래에 있어야 한다. -->
+</body>
+</html>

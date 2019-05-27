@@ -1,0 +1,10 @@
+<h1>This is index page</h1>
+
+<a href="/journal/add">Add New Article</a>
+
+<%journals.forEach(function(journal){%>
+    <h1><%=journal.title%></h1>
+    <img src="<%=journal.image%>">
+    <p><%=journal.body%></p>
+    <a href="/journal/<%=journal._id%>">See in detail</a>
+<%})%>

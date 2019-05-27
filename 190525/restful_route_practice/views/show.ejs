@@ -1,0 +1,15 @@
+<h3>Show Page</h1>
+
+<br>
+<br>
+
+<h1><%=journal.title%></h1>
+
+<img src="<%=journal.image%>">
+
+<p><%=journal.body%></p>
+
+<a href="/index/<%=journal._id%>/edit">edit</a>
+<form action="/index/<%=journal._id%>?_method=delete" method="post">
+    <button style="background:red;">Delete</button>
+</form>

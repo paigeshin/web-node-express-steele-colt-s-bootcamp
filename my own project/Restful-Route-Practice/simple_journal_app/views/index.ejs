@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<h1>This is Journal Page!</h1>
+
+<%journals.forEach(function(journal){%>
+    <div>
+        <li><%=journal.title%> - <%=journal.created.toDateString()%></li>
+        <img src="<%=journal.image%>">
+        <br>
+        <a href="/index/<%=journal._id%>">See in detail</a>
+    </div>
+<%})%>
+
+<br>
+<a href="/index/new">Add New</a>
+
+<% include partials/footer %>

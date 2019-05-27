@@ -1,0 +1,77 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+/*div를 넣어주고 그 안에 무엇을 넣어야지 화면에 보인다. padding도 가능*/
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 25%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#container {
+	margin: 20px auto;
+	/*가운데로 정렬*/
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+
+
+/*여기서 재밌는 사실을 놓치지 말자! #stripe 아래에 있는 child element들이 text-align에 모두 영향을 받는 것을 확인할 수 있다!*/
+#stripe {
+	background: white;
+	height: 30px;
+	/*왜 px로 했는지 생각해봐라. %로하면 안에있는 것들이 화면이 작아질 때 깨진다*/
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	background: steelblue;
+}
+
+#colorDisplay {
+	font-size: 200%;
+	/*이렇게 하면 h1보다 2배 커지는 것*/
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 2.0s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}

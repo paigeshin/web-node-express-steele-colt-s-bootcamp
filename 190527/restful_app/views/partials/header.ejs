@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Restful App</title>
+
+    </head>
+    <body>
+
+    <br>
+
+    <h1>Header Working?</h1>
+
+    <% if(error && error.length > 0){ %>
+        <%= console.log(error); %>
+        <p><%= error    %></p>
+    <%}%>
+    <% if(success && success.length > 0) { %>
+        <% console.log(success); %>
+        <p><%= success %></p>
+    <%}%>

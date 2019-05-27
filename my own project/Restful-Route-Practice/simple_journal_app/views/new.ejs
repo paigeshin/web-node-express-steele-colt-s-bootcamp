@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1>This is New Page</h1>
+
+<form action="/index" method="post">
+    <input type="text" name="journal[title]" placeholder="title" required>
+    <br>
+    <input type="text" name="journal[image]" placeholder="url" required>
+    <br>
+    <textarea name="journal[body]" required></textarea>
+    <input type="submit">
+</form>
+
+<% include partials/footer %>

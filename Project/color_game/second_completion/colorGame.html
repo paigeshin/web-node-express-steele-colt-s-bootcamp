@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>The Great 
+		<br>
+		<span id="colorDisplay">RGB</span> 
+		<br>
+		Color Game
+	</h1>
+
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+
+	<div id="container">
+		<!-- 사각형그리기 - div -->
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script type="text/javascript" src="colorGame.js"></script>
+	
+</body>
+</html>
+
+<!--1. init() function에 집어 넣을 것은 다 집어넣는다 -->
+<!--2. reset을 사용하기 떄문에 지울 것은 다 지운다. -->
+<!--3. 변수 초기화 var colors = []; var pickedColor; -->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effects</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: teal;
+			float: left;
+			margin: 20px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 버튼을 누르면 fadeOut이 작동된다. -->
+
+	<button>Click Me</button>
+
+	<div>Please don't fade me!</div>
+	<div>I'm begging you, please!</div>
+	<div>Help help help!!</div>
+
+	<p>hi</p>
+	<h3>Holy Jesus</h3>
+
+	<section>
+		<p>hi</p>
+		<p>hi</p>
+		<p>hi</p>
+	</section>
+
+	<p id="hahaha">hohohohohohoho</p>
+
+	<script type="text/javascript">
+		$("button").on("click", function(){
+			//fadeout은 element를 지우는 것이 아니라 그냥 hide하는 것을 기억하자.
+			$('div').fadeIn(); //이렇게만 해도 적용된다. 
+			$('p').fadeOut(1000); //1000은 1초.
+			$('h3').fadeOut(3000, function(){
+				$(this).remove();
+			});
+			$('section p').fadeToggle(500);
+			$('#hahaha').slideDown();
+		})
+	</script>
+
+</body>
+</html>

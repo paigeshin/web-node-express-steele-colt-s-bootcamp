@@ -1,0 +1,92 @@
+/* 
+1. 바탕화면 
+2. h1
+3. input
+4. lists
+5. red button
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+  width: 20%;
+  min-width: 300px;
+  margin: 100px auto;
+  background: white;
+  box-shadow: 5px, 10px, 18px, #2980b9;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px 10px;
+  background: steelblue;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: white;
+  height: 40px;
+  line-height: 40px;
+}
+
+li:nth-child(2n) {
+  background: #f2f2f2;
+}
+
+span {
+  background: #e74c3c;
+  margin-right: 20px;
+  width: 0;
+  height: 40px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+  font-size: 20px;
+  color: steelblue;
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+  background: #f2f2f2;
+}
+
+.selected {
+  text-decoration: line-through;
+}
+
+.fa-plus {
+  float: right;
+}

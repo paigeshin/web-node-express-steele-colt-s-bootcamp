@@ -1,0 +1,11 @@
+<% include partials/header %>
+
+<h1><%=journal.title%></h1>
+<img src="<%=journal.image%>">
+
+<br>
+<a href="/index/<%=journal._id%>/edit">Edit your journal</a>
+<form action="/index/<%=journal._id%>?_method=DELETE" method="POST">
+    <button>Delete</button>
+</form>
+<% include partials/footer %>

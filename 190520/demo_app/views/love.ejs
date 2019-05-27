@@ -1,0 +1,18 @@
+<% include partials/header %>
+<h1>You fell in love with: <%= thingVar %></h1>
+
+<% if(thingVar.toLowerCase() === "rusty"){ %>
+	<p>GOOD CHOICE! RUSTY IS THE BEST!</p>
+<% } else { %>
+	<p>Bad Choice! You should have said Rusty!</p>
+<% } %>
+
+<!--
+1. <% %>, 2. <%= %> 차이
+1번은 단순히 javascript 코드를 진행한다
+2번은 value를 return 한다.
+-->
+
+<p>P.S. this is the love.ejs file!</p>
+
+<% include partials/footer %>

@@ -1,0 +1,25 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #3498db;
+} 
+
+h2 {
+	font-weight: bold;
+	color: #2c3e50;
+	font-size: 30px;
+}
+
+.article {
+	border: 20px solid #bdc3c7;
+	padding: 3%;
+}
+
+.content {
+	border-bottom: 1px solid #bdc3c7;
+}

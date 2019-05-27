@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+<h1>This is where you add your new journal</h1>
+
+<form action="/journals" method="POST">
+    <div style="text-align:center;">
+        <div>
+            <input type="text" name="journal[title]" placeholder="title">
+        </div>
+        <div>
+            <input type="text" name="journal[image]" placeholder="image url">
+        </div>
+        <div>
+            <textarea name="journal[body]"></textarea>
+        </div>
+        <div>
+            <button>Submit</button> 
+        </div>
+    </div>
+</form>
+
+<% include ../partials/footer %>

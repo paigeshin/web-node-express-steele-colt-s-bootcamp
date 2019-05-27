@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Circles</title>
+
+    <script type="text/javascript" src="paper-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/paperscript" canvas="myCanvas">
+
+        var circles = [];
+
+        //이 함수 안에 작성된 내용들은 키가 눌러질 때마다 작동됨.
+        function onKeyDown(event){
+            //document의 최대 point를 잡는다.
+            var maxPoint = new Point(view.size.width, view.size.height);
+            //document의 random point를 잡는다.
+            var randomPoint = Point.random(); 
+            //실제 출력할 좌표 - 왜 곱하는지는 잘모름
+            var point = maxPoint * randomPoint;
+            //좌표대로 원 형성 
+            var newCircle = new Path.Circle(point, 500);
+            newCircle.fillColor = "orange";
+            //어레이에 집어넣음
+            circles.push(newCircle);
+        }
+
+        //이 함수 내부에서 애니메이션이 적용된다. 
+        function onFrame(event){
+            for(var i=0; i<circles.length; i++){
+                //색이 바뀜
+                circles[i].fillColor.hue += 1; 
+                //크기 바뀜
+                circles[i].scale(.9);
+            }
+        }
+
+    </script>
+    <!-- The powerful concept of library - You don't need to know how it works! -->
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>

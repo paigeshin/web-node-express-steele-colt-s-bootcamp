@@ -1,0 +1,24 @@
+body {
+	/*navbar-fixed-top 을 사용하면 나오는 문제를 해결하기 위해서 이렇게 한다.*/
+	padding-top: 60px;
+}
+
+/*Dark Blue: #2c3e50
+Light Gray: #ecf0f1*/
+
+.jumbotron {
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	color: white;
+}

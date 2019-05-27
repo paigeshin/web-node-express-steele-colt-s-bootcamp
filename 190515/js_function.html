@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function isEven(num){
+
+			if(num % 2 === 0){
+				return true;
+			}
+			else {
+				return false;
+			}
+
+		}
+
+		function factorial(num){
+
+			//4! 4 * 3 * 2 * 1
+
+			var result = 1;
+			for(var i=1; i<= num; i++){
+				result = result * i;
+			}
+			return result;
+		}
+
+		function factorial2(num){
+
+			var result = 1;
+			for(var i=1; i<=num; i++){
+				result = result * i;
+			}
+
+		}
+
+		console.log(factorial(10));
+		console.log(factorial(3));
+		console.log(factorial(4));
+
+		function kebabToSnake(str){
+			
+
+			var res = str.replace(/-/g, "_");
+
+			console.log(res);
+
+			return res;
+		}
+
+		kebabToSnake("hello-world");
+		kebabToSnake("dogs-are-awesome");
+		kebabToSnake("blah");
+
+	</script>
+
+</body>
+</html>

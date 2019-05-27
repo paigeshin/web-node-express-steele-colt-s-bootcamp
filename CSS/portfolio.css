@@ -1,0 +1,19 @@
+img {
+	width: 30%;
+	/*이렇게 하면 margin이 10%남는다*/
+	float: left;
+	margin: 1.66%;
+	/*10%의 margin을 margin값 6으로 나눈 것을 적용한 모습*/
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	margin: 1.66%;
+	font-size: 23px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 20px;
+}
+

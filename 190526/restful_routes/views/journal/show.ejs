@@ -1,0 +1,15 @@
+<h1>This is show page</h1>
+
+    <h1><%=journal.title%></h1>
+    <img src="<%=journal.image%>">
+    <p><%=journal.body%></p>
+
+    <button><a href="/journal/<%=journal._id%>/edit">Edit</a></button>
+    <form action="/journal/<%=journal._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <a href="/journal">Go Home</a>

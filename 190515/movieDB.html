@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var movie1 = {
+			title: "In Bruges",
+			rating: "5 stars",
+			hasWatched: true
+		}
+
+		var movie2 = {
+			title: "Frozen",
+			rating: "4.5 stars",
+			hasWatched: false
+		}
+
+		var movie3 = {
+			title: "Mad Max Fury Road",
+			rating: "5 stars",
+			hasWatched: true
+		}
+
+		var movie4 = {
+			title: "Les Miserables",
+			rating: "3.5 stars",
+			hasWatched: false
+		}
+
+		var movies = [movie1, movie2, movie3, movie4];
+
+		movies.forEach(function(element){
+
+			var result = "";
+			if(element["hasWatched"]
+				){
+				result += "You have watched " + element["title"] + " - " + element["rating"] + "\n";
+			}
+			else {
+				result += "You have not seen " + element.title + " - " + element.rating + "\n";
+			}
+
+			console.log(result);
+
+		})
+
+		
+
+	</script>
+</body>
+</html>
