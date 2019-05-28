@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+    <div>
+        <p><%= photo.title %></p>
+        <img src="<%= photo.image %>">
+    </div>
+
+    
+    <button><a href="/gallery/<%= photo._id %>">Edit</a></button>
+    <form action="/gallery/<%= photo._id %>?_method=DELETE" method="POST"> 
+        <button>Delete</button>  
+    </form>
+
+<% include ../partials/footer %>

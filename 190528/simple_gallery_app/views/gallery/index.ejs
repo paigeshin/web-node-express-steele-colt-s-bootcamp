@@ -1,0 +1,16 @@
+<% include ../partials/header %>
+
+<a href="/gallery/add">Want to Add photos?</a>
+
+<% photos.forEach(function(photo){ %>
+    <div>
+        <p><%= photo.title %></p>
+        <img src="<%= photo.image %>">
+        <a href="/gallery/<%= photo._id %>">in detail</a>
+    </div>
+<% }) %>
+
+
+
+
+<% include ../partials/footer %>

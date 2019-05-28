@@ -1,0 +1,9 @@
+<% include ../partials/header %>
+
+<form action="/gallery/<%= photo._id %>?_method=PUT" method="POST">
+    <input type="text" name="photo[title]" value="<%= photo.title %>">    
+    <input type="text" name="photo[image]" value="<%= photo.image %>">  
+    <button>Submit</button>  
+</form>
+
+<% include ../partials/footer %>
