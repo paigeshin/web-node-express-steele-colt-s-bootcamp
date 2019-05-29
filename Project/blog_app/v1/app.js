@@ -98,7 +98,6 @@ app.put("/blogs/:id", function(req, res) {
       res.redirect("/blogs/" + req.params.id);
     }
   });
-  Blog.findByIdAndUpdate;
 });
 
 // Delete Route
